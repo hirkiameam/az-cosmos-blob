@@ -1,6 +1,7 @@
 <template>
   <div class="outline">
     <h1>POST CONTENT</h1>
+    <NuxtLink to="/blob">blob</NuxtLink>
     <!-- create postform with ../server/api/item -->
     <form>
       <input type="text" name="content" placeholder="content" v-model="contentinput" />
@@ -11,7 +12,6 @@
       {{ item }}
       <button class="delete" @click="deleteItem(item.id)">Delete</button>
     </p>
-
   </div>
 </template>
 
